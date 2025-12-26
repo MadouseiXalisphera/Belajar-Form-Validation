@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasigma Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="judul" id="judul">Mahasigma Form</h1>
+
+    <form action="" id="mahasigma-form">
+        <fieldset class="fieldset" id="data-mahasiswa">
+            <legend>Data Mahasiswa</legend>
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama" required>
+            <label for="nim">NIM</label>
+            <input type="number" name="nim" id="nim" required>
+            <label for="kelas">Kelas</label>
+            <input type="text" name="kelas" id="kelas" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+
+        <fieldset class="fieldset" id="keperluan">
+            <legend>keperluan</legend>
+            <input type="checkbox" name="administrasi" id="administrasi"><label for="administrasi">Administrasi</label>
+            <input type="checkbox" name="konsultasi" id="konsultasi"><label for="konsultasi">Konsultasi</label>
+            <input type="checkbox" name="bimbingan" id="bimbingan"><label for="bimbingan">Bimbingan</label>
+            <input type="checkbox" name="lainnya" id="lainnya"><label for="lainnya">Lainnya</label>
+        </fieldset>
+
+        <fieldset class="fieldset" id="keterangan" hidden>
+            <legend>keterangan</legend>
+            <textarea name="keterangan-text" id="keterangan-text" placeholder="masukan keterangan" cols="50" rows="10"></textarea>
+        </fieldset>
+        
+        <div id="button-container">
+            <button type="submit" id="submit-button">Submit</button>
+            <span></span>
+            <button type="reset" id="reset-button">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
+<script src="script.js"></script>

@@ -1,4 +1,4 @@
-/* 1. Custom Properties (Design Tokens) */
+
 :root {
   --font-family: system-ui, -apple-system, sans-serif;
   --bg-color: #ffffff;
@@ -7,9 +7,9 @@
   --gap: 1rem;
 }
 
-/* 2. Modern CSS Reset */
+
 *, *::before, *::after {
-  box-sizing: border-box; /* 1.2.9 */
+  box-sizing: border-box; 
 }
 
 * {
@@ -38,16 +38,15 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* 3. Base Styles */
+
 html {
-  scroll-behavior: smooth; /* 1.1.7 */
+  scroll-behavior: smooth; 
 }
 
 .judul {
         text-align: center;
         margin-bottom: 20px;
     }
-
 
 #mahasigma-form {
         max-width: 70%;
@@ -56,12 +55,14 @@ html {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 10px;
     }
+
 fieldset {
         padding: 15px;
         margin-bottom: 10px;
         border-radius: 5px;
         border-color: rgb(118, 118, 118);
     }
+    
 #data-mahasiswa {
     display: flex;
         flex-direction: column;
@@ -73,15 +74,13 @@ fieldset {
     column-gap:10px;
 }
 
-
-
-    #button-container {
+#button-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    #submit-button, #clear-button {
+#submit-button, #clear-button {
         margin: 10px 15px 0;
     }
     

@@ -13,21 +13,21 @@
         <fieldset class="fieldset" id="data-mahasiswa">
             <legend>Data Mahasiswa</legend>
             <label for="nama">Nama</label>
-            <input type="text" name="nama" id="nama" required>
+            <input type="text" name="nama" id="nama"  placeholder="Tidak boleh kosong">
             <label for="nim">NIM</label>
-            <input type="number" name="nim" id="nim" required>
+            <input type="number" name="nim" id="nim"  placeholder="XXXXXXX">
             <label for="kelas">Kelas</label>
-            <input type="text" name="kelas" id="kelas" required>
+            <input type="text" name="kelas" id="kelas"  placeholder="X-Y">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" >
         </fieldset>
 
         <fieldset class="fieldset" id="keperluan">
             <legend>keperluan</legend>
-            <input type="checkbox" name="administrasi" id="administrasi"><label for="administrasi">Administrasi</label>
-            <input type="checkbox" name="konsultasi" id="konsultasi"><label for="konsultasi">Konsultasi</label>
-            <input type="checkbox" name="bimbingan" id="bimbingan"><label for="bimbingan">Bimbingan</label>
-            <input type="checkbox" name="lainnya" id="lainnya"><label for="lainnya">Lainnya</label>
+            <input type="checkbox" name="keperluan" id="administrasi" value="administrasi"><label for="administrasi">Administrasi</label>
+            <input type="checkbox" name="keperluan" id="konsultasi" value="konsultasi"><label for="konsultasi">Konsultasi</label>
+            <input type="checkbox" name="keperluan" id="bimbingan" value="bimbingan"><label for="bimbingan">Bimbingan</label>
+            <input type="checkbox" name="keperluan" id="lainnya" value="lainnya"><label for="lainnya">Lainnya</label>
         </fieldset>
 
         <fieldset class="fieldset" id="keterangan" hidden>
@@ -37,7 +37,7 @@
         
         <div id="button-container">
             <button type="submit" id="submit-button">Submit</button>
-            <span></span>
+            <span id="message"></span>
             <button type="reset" id="reset-button">Reset</button>
         </div>
     </form>
